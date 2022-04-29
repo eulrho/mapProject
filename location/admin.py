@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import ParkingLot
 
-# Register your models here.
+class ParkingLotAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+
+admin.site.register(ParkingLot, ParkingLotAdmin)
