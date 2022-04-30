@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id="map" style="width:1000px;height:700px;"></div>
-	<div id="lat" style="display: none">
+    <div id="lat" style="display: none">
     	<ul>
    	 		{% for pl in parkinglots %}
      	   		<li>{{pl.latitude}}</li>
@@ -24,32 +24,33 @@
 	<script>
 		var container = document.getElementById('map');
 		var options = {
-			center: new kakao.maps.LatLng(36.62842348287764, 127.45741876801542),	// 지도 시작 중심 위치(위도, 경도)
+			center: new kakao.maps.LatLng(36.62842348287764, 127.45741876801542),
 			level: 4	// 지도 확대 정도 조절
 		};
 
 		var map = new kakao.maps.Map(container, options);
 
-		var list_lat = document.getElementById("lat").innerText.split(',');
-    	var list_lon = document.getElementById("lon").innerText.split(',');
+        var list_lat = document.getElementById("lat").innerText.split('\n');
+        var list_lon = document.getElementById("lon").innerText.split('\n');
 
-    	var parkinglotCoordinates = new Array();
+        // 마커 위치 지정
+        var markerPositions = new Array();
+        for (var idx = 0; idx < list_lon.length; idx++) {
+            markerPositions.push( new kakao.maps.LatLng(list_lat[idx], list_lon[idx]));
+        }
 
-    	for(var idx=0; idx<list_lat.length; idx++){
-        	var latitude = list_lat[idx];
-        	var longitude = list_lon[idx];
-        	parkinglotCoordinates.push(new kakao.maps.LatLng(latitude, longitude))
-   		 }
+        // 마커 생성
+        var markers = new Array();
+        for (var idx = 0; idx < list_lon.length; idx++) {
+            markers.push( new kakao.maps.Marker({
+                position: markerPositions[idx]
+            }));
+        }
 
-		var marker = new Array;
+        for (var idx = 0; idx < list_lon.length; idx++) {
+            markers[idx].setMap(map);
+        }
 
-    	for(var idx=0; idx<list_lat.length; idx++){
-        	var marker = new kakao.maps.Marker({
-            	map: map,
-            	position: parkinglotCoordinates[idx]
-        	});
-   		 }
-    	marker.setMap(map);
 	</script>
 </body>
 </html>
