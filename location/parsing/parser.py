@@ -16,9 +16,9 @@ def parsing():
 
     for i in range(3):
         post.append({
-            'name' : json_data['parkinglot'][i]['name'],
-            'lat' : json_data['parkinglot'][i]['latitude'],
-            'lon': json_data['parkinglot'][i]['longitude']
+            'name' : json_data['parkinglots'][i]['name'],
+            'lat' : json_data['parkinglots'][i]['latitude'],
+            'lon': json_data['parkinglots'][i]['longitude']
         })
 
     return post
