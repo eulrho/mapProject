@@ -6,6 +6,20 @@
 </head>
 <body>
 	<div id="map" style="width:1000px;height:700px;"></div>
+	<div id="lat" style="display: none">
+    	<ul>
+   	 		{% for pl in parkinglots %}
+     	   		<li>{{pl.latitude}}</li>
+    		{% endfor %}
+    	</ul>
+	</div>
+	<div id="lon" style="display: none">
+    	<ul>
+    		{% for pl in parkinglots %}
+        		<li>{{pl.longitude}}</li>
+    		{% endfor %}
+    	</ul>
+	</div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=796522558bb0e42d1eb6354c6db96abe"></script>
 	<script>
 		var container = document.getElementById('map');
@@ -15,6 +29,27 @@
 		};
 
 		var map = new kakao.maps.Map(container, options);
+
+		var list_lat = document.getElementById("lat").innerText.split(',');
+    	var list_lon = document.getElementById("lon").innerText.split(',');
+
+    	var parkinglotCoordinates = new Array();
+
+    	for(var idx=0; idx<list_lat.length; idx++){
+        	var latitude = list_lat[idx];
+        	var longitude = list_lon[idx];
+        	parkinglotCoordinates.push(new kakao.maps.LatLng(latitude, longitude))
+   		 }
+
+		var marker = new Array;
+
+    	for(var idx=0; idx<list_lat.length; idx++){
+        	var marker = new kakao.maps.Marker({
+            	map: map,
+            	position: parkinglotCoordinates[idx]
+        	});
+   		 }
+    	marker.setMap(map);
 	</script>
 </body>
 </html>

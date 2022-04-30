@@ -1,5 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+import django
+django.setup()
 
-def index(request):
-    return render(request, 'default.html')
+from django.shortcuts import render
+from location.models import ParkingLot
+
+def parkingLot(request):
+    parkinglots = ParkingLot.objects.all
+    context = {'parkinglots':parkinglots}
+    return render(request, 'default.html', context)
