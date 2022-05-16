@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>전동킥보드 주차장 지도</title>
+</head>
+<body>
+	<div id="map" style="width:1000px;height:700px;"></div>
+    <div id="lat" style="display: none">
+    	<ul>
+   	 		{% for pl in parkinglots %}
+     	   		<li>{{pl.latitude}}</li>
+    		{% endfor %}
+    	</ul>
+	</div>
+	<div id="lon" style="display: none">
+    	<ul>
+    		{% for pl in parkinglots %}
+        		<li>{{pl.longitude}}</li>
+    		{% endfor %}
+    	</ul>
+	</div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=796522558bb0e42d1eb6354c6db96abe"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(36.62842348287764, 127.45741876801542),
+			level: 4	// 지도 확대 정도 조절
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+        var list_lat = document.getElementById("lat").innerText.split('\n');
+        var list_lon = document.getElementById("lon").innerText.split('\n');
+
+        // 마커 위치 지정
+        var markerPositions = new Array();
+        for (var idx = 0; idx < list_lon.length; idx++) {
+            markerPositions.push( new kakao.maps.LatLng(list_lat[idx], list_lon[idx]));
+        }
+
+        // 마커 생성
+        var markers = new Array();
+        for (var idx = 0; idx < list_lon.length; idx++) {
+            markers.push( new kakao.maps.Marker({
+                position: markerPositions[idx]
+            }));
+        }
+
+        for (var idx = 0; idx < list_lon.length; idx++) {
+            markers[idx].setMap(map);
+        }
+
+	</script>
+</body>
+</html>
