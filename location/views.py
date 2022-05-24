@@ -9,4 +9,4 @@ from location.models import ParkingLot
 def parkingLot(request):
     parkinglots = ParkingLot.objects.all
     context = {'parkinglots':parkinglots}
-    return render(request, 'default.html', context)
+    return render(request, 'location/default.html', context)
