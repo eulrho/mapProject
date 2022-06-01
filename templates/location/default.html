@@ -33,6 +33,14 @@
         var list_lat = document.getElementById("lat").innerText.split('\n');
         var list_lon = document.getElementById("lon").innerText.split('\n');
 
+		// 마커 이미지 불러오기
+		var imageSrc = '/static/marker.png'
+		var imageSize = new kakao.maps.Size(37, 39)	// 마커 이미지 크기 (width, height)
+		var imageOption = {offset: new kakao.maps.Point(27, 69)};	// 마커 이미지 옵션
+
+		// 마커의 이미지 정보를 가지고 있는 마커 이미지 생성하기
+		var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+
         // 마커 위치 지정
         var markerPositions = new Array();
         for (var idx = 0; idx < list_lon.length; idx++) {
@@ -43,7 +51,8 @@
         var markers = new Array();
         for (var idx = 0; idx < list_lon.length; idx++) {
             markers.push( new kakao.maps.Marker({
-                position: markerPositions[idx]
+                position: markerPositions[idx],
+				image: markerImage
             }));
         }
 
