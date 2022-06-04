@@ -18,7 +18,8 @@ def parsing():
         post.append({
             'name' : json_data['parkinglots'][i]['name'],
             'lat' : json_data['parkinglots'][i]['latitude'],
-            'lon': json_data['parkinglots'][i]['longitude']
+            'lon': json_data['parkinglots'][i]['longitude'],
+            'areaT': json_data['parkinglots'][i]['areatype']
         })
 
     return post
@@ -30,5 +31,6 @@ if __name__ == '__main__':
         ParkingLot(
             name = post[i]['name'],
             latitude = post[i]['lat'],
-            longitude = post[i]['lon']
+            longitude = post[i]['lon'],
+            areatype = post[i]['areaT']
         ).save()
