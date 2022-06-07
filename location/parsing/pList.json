@@ -4,19 +4,337 @@
             "name" : "제5공학관",
             "latitude" : "36.62414642290128",
             "longitude" : "127.45831581105392",
-            "areatype" : "E구역"
+            "areatype" : "E"
         },
         {
             "name" : "양진재",
             "latitude" : "36.624348445836915",
             "longitude" : "127.45967533104546 ",
-            "areatype" : "E구역"
+            "areatype" : "E"
         },
         {
             "name" : "토목공학관_1",
             "latitude" : "36.62424783009111",
             "longitude" : "127.4583080267145",
-            "areatype" : "E구역"
+            "areatype" : "E"
+        },
+        {
+            "name" : "충대병원앞",
+            "latitude" : "36.624879",
+            "longitude" : "127.463187 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "의과대학",
+            "latitude" : "36.625161",
+            "longitude" : "127.461171 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-3",
+            "latitude" : "36.626074",
+            "longitude" : "127.459037 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-3",
+            "latitude" : "36.625725",
+            "longitude" : "127.458942 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-3",
+            "latitude" : "36.626190",
+            "longitude" : "127.457991 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-4",
+            "latitude" : "36.625315",
+            "longitude" : "127.458915 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-7",
+            "latitude" : "36.625111",
+            "longitude" : "127.458278 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-7",
+            "latitude" : "36.625686",
+            "longitude" : "127.457902 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-7",
+            "latitude" : "36.625827",
+            "longitude" : "127.457738 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-7",
+            "latitude" : "36.625869",
+            "longitude" : "127.458103 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "토목공학관",
+            "latitude" : "36.624682",
+            "longitude" : "127.458141 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e10",
+            "latitude" : "36.624652",
+            "longitude" : "127.457774 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "학연산",
+            "latitude" : "36.625154",
+            "longitude" : "127.457431 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-3",
+            "latitude" : "36.626190",
+            "longitude" : "127.457991 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-2",
+            "latitude" : "36.626527",
+            "longitude" : "127.457749 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-1",
+            "latitude" : "36.627000",
+            "longitude" : "127.458044 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e8-1",
+            "latitude" : "36.626897",
+            "longitude" : "127.458179 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "제1학생회관",
+            "latitude" : "36.627995",
+            "longitude" : "127.457793 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "제1학생회관",
+            "latitude" : "36.628082",
+            "longitude" : "127.457873 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "제1학생회관",
+            "latitude" : "36.627703",
+            "longitude" : "127.459102 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "e4-1",
+            "latitude" : "36.627411",
+            "longitude" : "127.459821 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "사범대학",
+            "latitude" : "36.628245",
+            "longitude" : "127.460704 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "사범대학",
+            "latitude" : "36.628810",
+            "longitude" : "127.459948 ",
+            "areatype" : "E"
+        },
+        {
+            "name" : "도서관",
+            "latitude" : "36.628998",
+            "longitude" : "127.457216 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "사회과학대학",
+            "latitude" : "36.629379",
+            "longitude" : "127.457414 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "사회과학대학",
+            "latitude" : "36.629546",
+            "longitude" : "127.457766 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "경영대학",
+            "latitude" : "36.629827",
+            "longitude" : "127.457192 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "경영대학",
+            "latitude" : "36.630012",
+            "longitude" : "127.456770 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "인문사회관",
+            "latitude" : "36.630507",
+            "longitude" : "127.456374 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "인문사회관",
+            "latitude" : "36.630855",
+            "longitude" : "127.456741 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "미술관",
+            "latitude" : "36.630749",
+            "longitude" : "127.456929 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "인문대학",
+            "latitude" : "36.630568",
+            "longitude" : "127.458469 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "n18",
+            "latitude" : "36.630865",
+            "longitude" : "127.459409 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "생활과학대학",
+            "latitude" : "36.630219",
+            "longitude" : "127.460694 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "사범대학",
+            "latitude" : "36.629249",
+            "longitude" : "127.460526 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "법학대학원",
+            "latitude" : "36.631576",
+            "longitude" : "127.454655 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "인재양성원",
+            "latitude" : "36.632554",
+            "longitude" : "127.455628 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "대학본부",
+            "latitude" : "36.629942",
+            "longitude" : "127.454806 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "솔못 부근",
+            "latitude" : "36.628972",
+            "longitude" : "127.455632 ",
+            "areatype" : "N"
+        },
+        {
+            "name" : "농대",
+            "latitude" : "36.629637",
+            "longitude" : "127.453173 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "농대",
+            "latitude" : "36.630130",
+            "longitude" : "127.452767 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "농대",
+            "latitude" : "36.629482",
+            "longitude" : "127.452861 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "농대",
+            "latitude" : "36.629104",
+            "longitude" : "127.452920 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "양성재",
+            "latitude" : "36.627654",
+            "longitude" : "127.452766 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "제2학생회관",
+            "latitude" : "36.627676",
+            "longitude" : "127.453831 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "박물관",
+            "latitude" : "36.627466",
+            "longitude" : "127.455380 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "전자정보3관",
+            "latitude" : "36.625835",
+            "longitude" : "127.454235 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "나이팅게일관",
+            "latitude" : "36.625523",
+            "longitude" : "127.455046 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "자연대5호관",
+            "latitude" : "36.625801",
+            "longitude" : "127.455550 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "자연대6호관",
+            "latitude" : "36.625326",
+            "longitude" : "127.455766 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "수의과대학",
+            "latitude" : "36.623365",
+            "longitude" : "127.456603 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "수의과대학",
+            "latitude" : "36.623187",
+            "longitude" : "127.455429 ",
+            "areatype" : "S"
+        },
+        {
+            "name" : "수의과대학",
+            "latitude" : "36.622909",
+            "longitude" : "127.455899 ",
+            "areatype" : "S"
         }
     ]
 }

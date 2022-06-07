@@ -14,7 +14,7 @@ def parsing():
 
     post = []
 
-    for i in range(3):
+    for i in range(55):
         post.append({
             'name' : json_data['parkinglots'][i]['name'],
             'lat' : json_data['parkinglots'][i]['latitude'],
