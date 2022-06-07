@@ -6,23 +6,50 @@
 </head>
 <body>
 	<h2>전동킥보드 주차장 지도</h2>
-	<div id="map" style="width:1000px;height:700px;"></div>
-    <div id="lat" style="display: none">
-    	<ul>
-   	 		{% for pl in parkinglots %}
-     	   		<li>{{pl.latitude}}</li>
-    		{% endfor %}
-    	</ul>
+	<div class="map_wrap">
+		<div id="map" style="width:1000px;height:600px;"></div>
 	</div>
-	<div id="lon" style="display: none">
-    	<ul>
-    		{% for pl in parkinglots %}
-        		<li>{{pl.longitude}}</li>
-    		{% endfor %}
-    	</ul>
+	<form method="post">
+		{% csrf_token %}
+		<div class="form-group">
+			<p><label for="id_E">E구역:</label>
+				<input type="checkbox" name="E" id="id_E" value="True">
+			</p>
+			<p><label for="id_N">N구역:</label>
+				<input type="checkbox" name="N" id="id_N">
+			</p>
+			<p><label for="id_S">S구역:</label>
+				<input type="checkbox" name="S" id="id_S">
+			</p>
+		</div>
+		<button type="submit">search</button>
+	</form>
+	<div class="container">
+		<div id="lat" style="display: none">
+    		<ul>
+   	 			{% for pl in parkinglots %}
+     	   			<li>{{pl.latitude}}</li>
+    			{% endfor %}
+    		</ul>
+		</div>
+		<div id="lon" style="display: none">
+    		<ul>
+    			{% for pl in parkinglots %}
+        			<li>{{pl.longitude}}</li>
+    			{% endfor %}
+    		</ul>
+		</div>
+		<div id="areaT" style="display: none">
+    		<ul>
+    			{% for pl in parkinglots %}
+        			<li>{{pl.areatype}}</li>
+    			{% endfor %}
+    		</ul>
+		</div>
 	</div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=796522558bb0e42d1eb6354c6db96abe"></script>
 	<script>
+		console.log(areaT)
 		var container = document.getElementById('map');
 		var options = {
 			center: new kakao.maps.LatLng(36.62842348287764, 127.45741876801542),
